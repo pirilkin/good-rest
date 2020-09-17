@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: @white;
+}
+.title{
+   font-size: 40px; 
+   color: #000;
+   font-weight: bold;
+   .md-block({
+    font-size: 30px;
+});
+.sm-block({
+    font-size: 20px;
+});
+}
+.btn{
+    padding: 20px 40px;
+    background: @greenbtn;
+    border-radius: 28px;
+    font-size: 16px;
+    .md-block({
+        font-size: 13px;
+    });
+    .sm-block({
+        font-size: 10px;
+    });
+}
+.subtitle{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    .md-block({
+        font-size: 20px;
+    });
+    .sm-block({
+        font-size: 20px;
+    });
+}
+@keyframes phone-rotate{
+    0% {
+        transform: translateY(10px);
+    }
+    
+    100% {
+        transform: translateY(25px);
+    }
+}
+.btn-phone{
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.arrow-down{
+    font-size: 50px;
+    animation: phone-rotate 1s  infinite alternate linear;
+}
+.open {
+    display: flex !important;
+}
+.active{
+    display: block !important;
+}
+
+@import './params/mix.less';
+@import './params/var.less';
+@import './header.less';
+@import './second.less';
+@import './third.less';
+@import './four.less';
+@import './five.less';
+@import './six.less';
+@import './eight.less';
+@import './nine.less';
+@import './footer.less';
+@import './ten.less';
+@import './form.less';
+
+
+//-----шрифты-----//
+@import '../fonts/Roboto/stylesheet.css';

@@ -1,0 +1,119 @@
+.third{
+    background: @white;
+    padding: 100px 0;
+    text-align: center;
+    .lg-block({
+        padding: 50px 0;
+    });
+    .title{
+        margin-bottom: 45px;
+        .lg-block({
+            margin-bottom: 20px;
+        });
+
+    }
+    .subtitle{
+        margin-bottom: 110px;
+        .lg-block({
+            margin-bottom: 50px;
+        });
+        .md-block({
+            margin-bottom: 20px;
+        });
+    }
+    .col-xl-6{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 12%;
+        .lg-block({
+            margin-bottom: 5%;
+        });
+        img{
+            width: 100%;
+        }
+    }
+ 
+    &-content{
+        padding: 0 70px;
+        .lg-block({
+            padding: 0 ;
+        });
+        .sm-block({
+            padding: 0 ;
+        });
+        &__title{
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 1.23;
+            font-weight: bold;
+            .lg-block({
+                font-size: 18px;
+            });
+            .md-block({
+                margin-bottom: 18px;
+            });
+        }
+        &__item{
+            line-height: 1.55;
+            font-size: 18px;
+            .lg-block({
+                font-size: 15px;
+            });
+        }
+    }
+    &-img{
+        padding: 0 10px;
+    }
+    &-btn{
+        // font-size: 16px;
+    }
+    &-one{
+        order: 1;
+    }
+    &-two{
+        order: 2;
+    }
+    &-three{
+        order: 3;
+        .md-block({
+            order: 4;
+        });
+    }
+    &-four{
+        order: 4;
+        .md-block({
+            order: 3;
+        });
+    }
+    &-five{
+        order: 5;
+    }
+    &-six{
+        order: 6;
+    }
+    &-seven{
+        order: 7;
+        .md-block({
+            order: 8;
+        });
+    }
+    &-eight{
+        order: 8;
+        .md-block({
+            order: 7;
+        });
+    }
+    &-nine{
+        order: 9;
+    }
+    &-two,
+    &-three,
+    &-six,
+    &-seven{
+        margin-bottom: 50px !important;
+    }
+    
+
+}

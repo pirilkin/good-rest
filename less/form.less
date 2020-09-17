@@ -1,0 +1,138 @@
+.form {
+    display: none;
+    cursor: pointer;
+    
+    a {
+        color: @brown;
+    }
+    
+    .popupForm {
+        position: fixed;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        background: @white;
+        // border: 1px solid #000;
+        width: 450px;
+        padding: 25px 0px;
+        box-shadow: 0px 0px 16px -4px @fontGray;
+        border-radius: 6px;
+        color: @fontGray;
+        z-index: 999;
+        .md-block({
+            width: 100%;
+        });
+    }
+
+    .second-form {
+        &__items {
+            margin-top: 15px;
+
+            input {
+                margin-bottom: 20px;
+            }
+        }
+
+        input {
+            border: 1px solid #c5c5c5;
+            // border: 1px solid #ECC778;
+            width: 100%;
+            .sm-block({
+                height: 30px;
+                margin-bottom: 10px;
+            });
+        }
+
+        &__title {
+            color: #000;
+            width: 100%;
+        }
+
+        &__number {
+            color: #000;
+            width: 100%;
+        }
+
+        &__yourName {
+            color: #000;
+            width: 100%;
+        }
+
+        &__submit {
+            width: 100%;
+        }
+    }
+
+    input[type="submit"] {
+        background: @greenbtn;
+        margin: 0 0 2%;
+        .md-block({
+            font-size: 12px;
+        });
+    }
+
+    input::placeholder,
+    label {
+        color: @fontGray;
+        .sm-block({
+            font-size: 12px;
+        });
+    }
+
+    .closeForm {
+        position: absolute;
+        font-size: 25px;
+        font-weight: bold;
+        top: 12px;
+        right: 12px;
+        // border-radius: 50%;
+        // background: #AF8858;
+        padding: 8px 10px;
+        color: @fontGray;
+
+        :hover {
+            background: @green;
+            color: orange;
+        }
+    }
+
+    .onebg {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(150, 150, 150, 0.3);
+    }
+
+    &-top {
+        &-title {
+            padding: 0 8% 2%;
+            &__item {
+                font-size: 30px;
+                margin-bottom: 20px;
+                .sm-block({
+                    font-size: 25px;
+                });
+            }
+            .form-free{
+                .sm-block({
+                    font-size: 12px;
+                });
+            }
+        }
+    }
+.line{
+    background: @greenbtn;
+}
+.nine-form{
+    padding: 2% 8%;
+}
+
+.usually{
+    padding: 0 8% ;
+    font-size: 12px;
+}
+
+}

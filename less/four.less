@@ -1,0 +1,116 @@
+.four {
+    padding: 110px 0 80px;
+    background: #f2f2f2;
+    text-align: center;
+    .lg-block({
+        padding: 80px 0;
+    });
+    .md-block({
+        padding: 40px 20px;
+    });
+
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .col-xl-3{
+        margin-bottom: 20px;
+    }
+    .title{
+        margin-bottom: 25px;
+    }
+    .subtitle{
+        margin-bottom: 5px;
+    }
+    &-text{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15%;
+        .xl-block({
+            // font-size: 20px;
+            margin-bottom: 75px;
+        });
+        .lg-block({
+            font-size: 20px;
+            margin-bottom: 50px;
+        });
+    }
+    &-image{
+        width: 100%;
+        
+        img{
+            width: 100%;
+            .md-block({
+             padding: 20px;
+             width: 75%;   
+            });
+            // .sm-block({
+            //  padding: 0px;
+            //  width: 100%;   
+            // });
+        }
+    }
+    &-card{
+        background: @white;
+        
+
+        &__content{
+            text-align: left;
+            padding: 15px 15px 45px;
+            .sm-block({
+                text-align: center;
+            });
+            h6{
+                font-size: 16px;
+                color: @greenbtn;
+                font-weight: bold;
+                margin-bottom: 10px;
+                line-height: 1.35;
+            }
+            .text{
+                margin-bottom: 15px;
+                color: #2e2e2e;
+                line-height: 1.55;
+            }
+            ul{
+                font-size: 20px;
+                color: #000;
+                line-height: 1.55;
+                margin-bottom: 15px;
+                .lg-block({
+                    font-size: 15px;
+                });
+                li{
+                    color: #2e2e2e;
+                    font-size: 18px;
+                    .lg-block({
+                        font-size: 13px;
+                    });
+                    span{
+                        font-weight: bold;
+                        color: red;
+                    }
+                }
+            }
+            
+
+        }
+        &__price{
+            font-weight: 300;
+            font-size: 18px;
+            margin-bottom: 50px;
+            color: #2e2e2e;
+            line-height: 1.55;
+            .lg-block({
+                font-size: 13px;
+            });
+        }
+        
+    }
+    &-btn{
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+}
